@@ -94,7 +94,7 @@ public class Principal extends JFrame {
             buttons[i].setFont(new Font("emojiFont", Font.PLAIN, 14));
             
             // تنسيق الأزرار
-            buttons[i].setBackground(new Color(0, 210, 204));
+            buttons[i].setBackground(new Color(0, 0, 204));
             buttons[i].setForeground(Color.WHITE);
             buttons[i].setFocusPainted(false);
             buttons[i].setBorder(BorderFactory.createEmptyBorder(5, 15, 5, 15));
