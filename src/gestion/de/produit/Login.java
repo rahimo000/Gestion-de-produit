@@ -5,7 +5,7 @@
 package gestion.de.produit;
 
 import javax.swing.JOptionPane;
-
+import static gestion.de.produit.Logique.Authontification.*;
 /**
  *
  * @author hmz
@@ -52,7 +52,13 @@ public class Login extends javax.swing.JFrame {
                 }
                 
                 if (passwordCorrect) {
-                   
+                    login(password);
+                    System.out.println("login");
+                    for(boolean i:access){
+                        System.out.println(i);
+                    }
+                    System.out.println("login");
+                    System.out.println(password);
                     Principal mainFrame = new Principal();
                     mainFrame.setVisible(true);
                     dispose(); 

@@ -25,6 +25,7 @@ import java.util.Date;
 import gestion.de.produit.interfaces.ProduitPanel;
 import gestion.de.produit.interfaces.StatistiquePanel;
 import gestion.de.produit.interfaces.VentePanel;
+import static gestion.de.produit.Logique.Authontification.*;
 
 public class Principal extends JFrame {
     private JPanel mainPanel;
@@ -98,7 +99,8 @@ public class Principal extends JFrame {
             buttons[i].setForeground(Color.WHITE);
             buttons[i].setFocusPainted(false);
             buttons[i].setBorder(BorderFactory.createEmptyBorder(5, 15, 5, 15));
-            
+            buttons[i].setEnabled(access[i]);
+            System.out.println(access[i]);
             // إضافة فراغ بين الأزرار
             if (i > 0) {
                 leftPanel.add(Box.createRigidArea(new Dimension(0, 20)));
