@@ -47,7 +47,7 @@ public class Principal extends JFrame {
         
         leftPanel = new JPanel();
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
-        leftPanel.setBackground(new Color(0, 50, 204));
+        leftPanel.setBackground(new Color(0, 200, 204));
         leftPanel.setPreferredSize(new Dimension(200, getHeight()));
         leftPanel.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10));
         
