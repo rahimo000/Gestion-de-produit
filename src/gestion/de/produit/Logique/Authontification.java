@@ -24,40 +24,34 @@ public class Authontification {
                 false, // vante 3
                 false, // client 4
                 false, // fournisseur 5
-                false // statistique 6
+                false, // statistique 6
+                false // Livraison 7
             };
 
     public static void login(String role) {
         if(role.equals(STOCK))
         {
-            System.out.println("entered");
-            access[2]= true;
+            access[0]= true;
             access[1]= true;
-            access[6]= true;
-            //access[0]= true;
+            access[7]= true;
+            access[2]= true;
         }
         else if (role.equals(PROD)){
             access[1]= true;
             access[0]= true;
-            access[1]= true;
         }
         else if (role.equals ( ACH)){
+            access[0]= true;
             access[2]= true;
             access[5]= true;
-            access[1]= true;
         }
         else if (role.equals(VENT)){
-            access[0]= true;
-            access[1]= true;
-            access[2]= true;
-            access[3]= true;
             access[4]= true;
-            access[5]= true;
-            access[6]= true;
+            access[7]= true;
         }
         else if (role.equals(PAIE)){
             access[2]= true;
-            //access[0]= true;
+            access[7]= true;
         }
     }
 
