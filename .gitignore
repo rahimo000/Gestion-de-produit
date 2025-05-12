@@ -14,3 +14,11 @@ nbdist/
 *.jar
 *.war
 *.ear
+build/classes/gestion/de/produit/Principal$ProductionPanel$2.class
+build/classes/gestion/de/produit/Principal$ProductionPanel$2.class
+/build/classes/gestion/de/produit
+/build/classes
+build/classes/gestion/de/produit/Principal$ProductionPanel$1.class
+/build
+/build
+build/built-jar.properties

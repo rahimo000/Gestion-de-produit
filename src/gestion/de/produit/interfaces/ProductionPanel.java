@@ -36,6 +36,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableRowSorter;
+import gestion.de.produit.DBConnection;
 
 /**
  *
@@ -65,7 +66,7 @@ public class ProductionPanel extends JPanel {
     }
 
     private void establishDatabaseConnection() throws SQLException {
-        connection = DriverManager.getConnection(URL, USER, PASSWORD);
+        connection = DBConnection.getConnection();
         if (connection == null || connection.isClosed()) {
             throw new SQLException("La connexion à la base de données a échoué");
         }
