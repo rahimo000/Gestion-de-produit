@@ -50,6 +50,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableRowSorter;
+import static gestion.de.produit.Logique.Authontification.*;
 
 
 public class ProduitPanel extends JPanel {
@@ -100,8 +101,11 @@ public class ProduitPanel extends JPanel {
         buttonPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         
         JButton addButton = createModernButton("Saisir des infos", Color.BLUE, new Color(0, 120, 215));
+        addButton.setEnabled(access[8]);
         JButton editButton = createModernButton("Mettre à jour", Color.GRAY, new Color(100, 100, 100));
+        editButton.setEnabled(access[8]);
         JButton deleteButton = createModernButton("Supprimer", Color.RED, new Color(255, 0, 0));
+        deleteButton.setEnabled(access[8]);
         
         buttonPanel.add(addButton);
         buttonPanel.add(Box.createHorizontalStrut(15));
